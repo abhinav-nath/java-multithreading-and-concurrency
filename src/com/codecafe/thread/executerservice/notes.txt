@@ -1,0 +1,11 @@
+If we look at BasicMultiThreading.java, and assume if we need to perform 100 copy tasks then do we need to create 100 threads ?
+
+Short and simple answer is NO !
+
+Creating threads is a costly operation and creation of new threads must be done carefully and only when required.
+
+  "It is like purchasing 100 vehicles for doing 100 deliveries."
+  
+So what we can do is create a pool of threads and assign 100 tasks to the threads of that pool.
+
+We can create a thread pool by using ExecutorService (java.util.concurrent)
