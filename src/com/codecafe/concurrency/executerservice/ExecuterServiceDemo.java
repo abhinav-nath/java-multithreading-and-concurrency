@@ -1,8 +1,8 @@
-package com.codecafe.thread.executerservice;
+package com.codecafe.concurrency.executerservice;
 
 import java.util.concurrent.Executors;
 
-import com.codecafe.thread.usecase.CopyTask;
+import com.codecafe.concurrency.basics.CopyTask;
 
 import java.util.concurrent.ExecutorService;
 

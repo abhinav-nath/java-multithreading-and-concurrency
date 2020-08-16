@@ -1,4 +1,4 @@
-package com.codecafe.thread;
+package com.codecafe.concurrency.basics.designathread;
 
 class MyThread extends Thread {
 
@@ -18,14 +18,17 @@ class MyTask implements Runnable {
     }
 }
 
-public class CreatingThreads {
+public class Main {
 
     public static void main(String[] args) {
-        
+
         MyThread th1 = new MyThread();
         th1.start();   // submit the thread for execution
-        
+
+        // MyTask is runnable but it is not a thread
         MyTask task = new MyTask();
+        // in order to run in inside a thread, we need to create a Thread object
+        // and submit this task object for execution
         Thread th2 = new Thread(task);
         th2.start();
 

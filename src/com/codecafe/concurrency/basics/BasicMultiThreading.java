@@ -1,4 +1,4 @@
-package com.codecafe.thread.usecase;
+package com.codecafe.concurrency.basics;
 
 import java.io.IOException;
 
