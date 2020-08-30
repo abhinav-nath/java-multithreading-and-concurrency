@@ -18,7 +18,7 @@ class MyTask implements Runnable {
     }
 }
 
-public class Main {
+public class ThreadDemo {
 
     public static void main(String[] args) {
 
