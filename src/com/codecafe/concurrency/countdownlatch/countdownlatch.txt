@@ -1,6 +1,6 @@
-----------------
- CountdownLatch
-----------------
+----------------------------
+ CountdownLatch - since 1.5
+----------------------------
 
 CountDownLatch is used to make sure that a task waits for other threads before it starts.
 
@@ -9,6 +9,9 @@ Working of CountDownLatch:
 
 When we create an object of CountDownLatch, we specify the number of threads it should wait for, all such thread are required to do count down by calling CountDownLatch.countDown() once they are completed or ready to the job.
 As soon as count reaches zero, the waiting task starts running.
+
+If we were doing some parallel processing, we could instantiate the CountDownLatch with the same value for the counter as a number of threads we want to work across.
+Then, we could just call countDown() after each thread finishes, guaranteeing that a dependent thread calling await() will block until the worker threads are finished.
 
 
 - Creating an object of CountDownLatch by passing an int to its constructor (the count), is actually number of invited parties (threads) for an event.
