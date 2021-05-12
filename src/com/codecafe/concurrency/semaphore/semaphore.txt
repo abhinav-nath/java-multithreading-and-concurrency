@@ -1,0 +1,17 @@
+--------------------------------
+ Semaphore - The permit machine
+--------------------------------
+
+If we want to give access to critical section to multiple threads one at a time then we use a Lock.
+
+But what if we want to give access to more than one threads?
+
+Here we use Semaphore.
+
+Semaphore is nothing but a "permit machine".
+
+We define a Semaphore with number of allowed permits.
+
+So if we define a Semaphore with 3 permits then at a time only 3 threads can work on the CS.
+
+Rest of the threads will wait for the working threads to release the permit.
