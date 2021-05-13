@@ -1,4 +1,4 @@
-package com.codecafe.concurrency.basics;
+package com.codecafe.concurrency.thread.basics;
 
 import java.io.IOException;
 

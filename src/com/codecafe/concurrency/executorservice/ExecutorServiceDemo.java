@@ -1,12 +1,12 @@
-package com.codecafe.concurrency.executerservice;
+package com.codecafe.concurrency.executorservice;
 
 import java.util.concurrent.Executors;
 
-import com.codecafe.concurrency.basics.CopyTask;
+import com.codecafe.concurrency.thread.basics.CopyTask;
 
 import java.util.concurrent.ExecutorService;
 
-public class ExecuterServiceDemo {
+public class ExecutorServiceDemo {
 
     public static void main(String[] args) {
 

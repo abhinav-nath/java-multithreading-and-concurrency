@@ -1,4 +1,4 @@
-package com.codecafe.concurrency.basics;
+package com.codecafe.concurrency.thread.basics;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -12,7 +12,7 @@ public class IOUtils {
 
         int value;
         // reads one byte at a time and write it to the dest
-        while((value = src.read()) != -1) {
+        while ((value = src.read()) != -1) {
             dest.write(value);
         }
     }

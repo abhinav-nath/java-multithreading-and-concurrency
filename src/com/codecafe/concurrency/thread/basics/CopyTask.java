@@ -1,4 +1,4 @@
-package com.codecafe.concurrency.basics;
+package com.codecafe.concurrency.thread.basics;
 
 import java.io.IOException;
 
@@ -11,7 +11,7 @@ public class CopyTask implements Runnable {
         this.sourceFile = sourceFile;
         this.destFile = destFile;
     }
-    
+
     @Override
     public void run() {
         try {

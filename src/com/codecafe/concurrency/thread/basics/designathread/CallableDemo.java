@@ -1,4 +1,4 @@
-package com.codecafe.concurrency.basics.designathread;
+package com.codecafe.concurrency.thread.basics.designathread;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;

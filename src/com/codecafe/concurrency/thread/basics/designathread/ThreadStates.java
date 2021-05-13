@@ -1,4 +1,4 @@
-package com.codecafe.concurrency.basics.designathread;
+package com.codecafe.concurrency.thread.basics.designathread;
 
 public class ThreadStates {
     public static void main(String[] args) {

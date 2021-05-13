@@ -1,11 +1,11 @@
-package com.codecafe.concurrency.basics;
+package com.codecafe.concurrency.thread.basics;
 
 class MyThread1 extends Thread {
     public void run() {
         // Intentional infinite loop
-        for( ;; ) {
+        for ( ;; ) {
             // Returns true if the thread is interrupted
-            if(interrupted()) {
+            if (interrupted()) {
                 // You are supposed to rollback or reverse the operation in progress and stop
                 System.out.println("Thread is interrupted hence stopping...");
                 // Terminates the loop

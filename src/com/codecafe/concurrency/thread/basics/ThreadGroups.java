@@ -1,4 +1,4 @@
-package com.codecafe.concurrency.basics;
+package com.codecafe.concurrency.thread.basics;
 
 class MyTask implements Runnable {
 
@@ -15,7 +15,7 @@ class MyTask implements Runnable {
 public class ThreadGroups {
 
     public static void main(String[] args) {
-        
+
         ThreadGroup myThreadGroup = new ThreadGroup("MyThreadGroup");
         myThreadGroup.setMaxPriority(7);
 
@@ -27,7 +27,7 @@ public class ThreadGroups {
         Thread th = Thread.currentThread();
         ThreadGroup tg = th.getThreadGroup();
 
-        while(tg.getParent() != null) {
+        while (tg.getParent() != null) {
             tg = tg.getParent();
         }
         tg.list();
