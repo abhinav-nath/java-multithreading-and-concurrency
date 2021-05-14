@@ -1,6 +1,6 @@
----------------
- CyclicBarrier
----------------
+---------------------------
+ CyclicBarrier - since 1.5
+---------------------------
 
 A CyclicBarrier is a synchronizer that allows a set of threads to wait for each other to reach a common execution point, also called a barrier.
 
