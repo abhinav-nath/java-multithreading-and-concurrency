@@ -14,11 +14,14 @@ public class TaskB implements Runnable {
     @Override
     public void run() {
         try {
-            // Waits until all parties have invoked await on this barrier. 
+            // Waits until all parties have invoked await on this barrier
+            // call before starting any processing
             barrier.await();
         } catch (InterruptedException | BrokenBarrierException e) {
             e.printStackTrace();
         }
+
+        // some processing
         System.out.println("TaskB started");
     }
 
