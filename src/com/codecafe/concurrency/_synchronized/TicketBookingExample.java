@@ -1,4 +1,4 @@
-package com.codecafe.concurrency.synchronize;
+package com.codecafe.concurrency._synchronized;
 
 import java.util.HashMap;
 import java.util.Map;

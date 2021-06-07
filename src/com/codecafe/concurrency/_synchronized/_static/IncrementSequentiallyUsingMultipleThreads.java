@@ -1,4 +1,4 @@
-package com.codecafe.concurrency.synchronize._static;
+package com.codecafe.concurrency._synchronized._static;
 
 class CountTask implements Runnable {
     public int PRINT_NUMBERS_UPTO = 10;
