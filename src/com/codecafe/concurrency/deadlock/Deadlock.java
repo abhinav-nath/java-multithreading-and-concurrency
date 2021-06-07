@@ -12,7 +12,7 @@ class Writer1 extends Thread {
 
     @Override
     public void run() {
-        synchronized(book) {
+        synchronized (book) {
             try {
                 Thread.sleep(10);
             } catch (InterruptedException e) {
@@ -40,7 +40,7 @@ class Writer2 extends Thread {
     // thumb rule - lock sequence must always be same in all threads
     @Override
     public void run() {
-        synchronized(pen) {
+        synchronized (pen) {
             try {
                 Thread.sleep(10);
             } catch (InterruptedException e) {

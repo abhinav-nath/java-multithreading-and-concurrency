@@ -63,7 +63,7 @@ public class ProducerConsumerProblemBlockingQueueDemo {
     public static void main(String[] args) {
 
         // buffer limit is set to 3
-        BlockingQueue<String> queue = new ArrayBlockingQueue<String>(3);
+        BlockingQueue<String> queue = new ArrayBlockingQueue<>(3);
 
         Thread producerThread = new Thread(new _Producer(queue));
         Thread consumerThread = new Thread(new _Consumer(queue));
