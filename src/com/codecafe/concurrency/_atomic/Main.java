@@ -26,6 +26,8 @@ public class Main {
         new Thread(new Task(atomicIntegerRoundRobin), "T3").start();
         new Thread(new Task(atomicIntegerRoundRobin), "T4").start();
         new Thread(new Task(atomicIntegerRoundRobin), "T5").start();
+        new Thread(new Task(atomicIntegerRoundRobin), "T6").start();
+
     }
 
 }
