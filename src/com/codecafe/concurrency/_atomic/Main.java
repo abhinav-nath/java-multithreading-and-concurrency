@@ -36,6 +36,7 @@ public class Main {
 
         AtomicIntegerRoundRobin atomicIntegerRoundRobin = new AtomicIntegerRoundRobin(5);
 
+        // create a batch of 3 threads at a time
         Semaphore semaphore = new Semaphore(3);
 
         ExecutorService executor = Executors.newFixedThreadPool(50);
