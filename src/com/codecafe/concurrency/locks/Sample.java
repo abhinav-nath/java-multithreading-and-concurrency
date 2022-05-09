@@ -40,4 +40,5 @@ class Sample {
             lock.unlock(); // unlock the object - good practice to do this inside finally block
         }
     }
+
 }

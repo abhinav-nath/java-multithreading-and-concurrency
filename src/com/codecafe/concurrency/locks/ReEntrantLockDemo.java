@@ -1,6 +1,6 @@
 package com.codecafe.concurrency.locks;
 
-public class RentrantLockDemo {
+public class ReEntrantLockDemo {
 
     public static void main(String[] args) {
 
