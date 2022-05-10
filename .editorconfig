@@ -22,7 +22,7 @@ ij_java_align_multiline_array_initializer_expression = true
 ij_java_use_single_class_imports = true
 ij_java_class_count_to_use_import_on_demand = 999
 ij_java_names_count_to_use_import_on_demand = 999
-ij_java_imports_layout = *, |, java.**, |, javax.**, |, io.**, |, org.**, |, lombok.**, |, com.**, |, |, $*
+ij_java_imports_layout = *, |, java.**, |, javax.**, |, io.**, |, org.**, |, lombok.**, |, com.**, |, $*
 ij_java_layout_static_imports_separately = true
 
 [*.xml]
