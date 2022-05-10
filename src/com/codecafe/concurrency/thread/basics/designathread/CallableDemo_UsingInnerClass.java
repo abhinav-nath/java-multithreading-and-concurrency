@@ -8,25 +8,25 @@ import java.util.concurrent.Future;
 
 public class CallableDemo_UsingInnerClass {
 
-    public static void main(String[] args) throws InterruptedException, ExecutionException {
+  public static void main(String[] args) throws InterruptedException, ExecutionException {
 
-        int x = 10;
-        int y = 20;
+    int x = 10;
+    int y = 20;
 
-        ExecutorService executor = Executors.newFixedThreadPool(1);
-        Future<Integer> future = executor.submit(new Callable<Integer>() {
-            public Integer call() {
-                return MyMath.add(x, y);
-            }
-        });
+    ExecutorService executor = Executors.newFixedThreadPool(1);
+    Future<Integer> future = executor.submit(new Callable<Integer>() {
+      public Integer call() {
+        return MyMath.add(x, y);
+      }
+    });
 
-        while( ! future.isDone()); // wait
+    while (!future.isDone()) ; // wait
 
-        int z = future.get();
+    int z = future.get();
 
-        executor.shutdown();
+    executor.shutdown();
 
-        System.out.println("Result is " + z);
-    }
+    System.out.println("Result is " + z);
+  }
 
 }

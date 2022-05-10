@@ -5,15 +5,15 @@ import java.util.concurrent.BlockingQueue;
 
 public class AdditionalMethods {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-        BlockingQueue<String> blockingQueue = new ArrayBlockingQueue<>(3);
+    BlockingQueue<String> blockingQueue = new ArrayBlockingQueue<>(3);
 
-        int size = blockingQueue.size();
+    int size = blockingQueue.size();
 
-        int capacity = blockingQueue.remainingCapacity();
+    int capacity = blockingQueue.remainingCapacity();
 
-        boolean containsElement = blockingQueue.contains("1");
-    }
+    boolean containsElement = blockingQueue.contains("1");
+  }
 
 }

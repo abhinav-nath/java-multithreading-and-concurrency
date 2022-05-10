@@ -8,17 +8,17 @@ package com.codecafe.concurrency.threadsignalling;
 
 public class ProducerConsumerProblemDemo {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-        // buffer limit is set to 1
-        MessageQueue queue = new MessageQueue(1);
+    // buffer limit is set to 1
+    MessageQueue queue = new MessageQueue(1);
 
-        Thread producerThread = new Thread(new Producer(queue));
-        Thread consumerThread = new Thread(new Consumer(queue));
+    Thread producerThread = new Thread(new Producer(queue));
+    Thread consumerThread = new Thread(new Consumer(queue));
 
-        producerThread.start();
-        consumerThread.start();
+    producerThread.start();
+    consumerThread.start();
 
-    }
+  }
 
 }

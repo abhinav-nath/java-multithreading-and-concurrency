@@ -2,15 +2,15 @@ package com.codecafe.concurrency.locks;
 
 class IncrementTask implements Runnable {
 
-    private Sample obj;
+  private Sample obj;
 
-    public IncrementTask(Sample obj) {
-        this.obj = obj;
-    }
+  public IncrementTask(Sample obj) {
+    this.obj = obj;
+  }
 
-    @Override
-    public void run() {
-        obj.incr();
-    }
+  @Override
+  public void run() {
+    obj.incr();
+  }
 
 }
