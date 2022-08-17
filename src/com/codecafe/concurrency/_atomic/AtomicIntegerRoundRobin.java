@@ -12,7 +12,6 @@ public class AtomicIntegerRoundRobin {
   }
 
   public synchronized int index() {
-
     atomicInteger.compareAndSet(totalIndexes + 1, 0);
 
     int index = atomicInteger.get();

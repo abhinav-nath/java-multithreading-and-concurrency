@@ -9,7 +9,6 @@ import java.util.stream.IntStream;
 public class SemaphoreDemo {
 
   public static void main(String[] args) throws InterruptedException {
-
     // initialize the semaphore with number of permits
     Semaphore semaphore = new Semaphore(3);
 

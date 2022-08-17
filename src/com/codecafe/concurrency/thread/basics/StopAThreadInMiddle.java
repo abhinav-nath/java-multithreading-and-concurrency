@@ -1,6 +1,7 @@
 package com.codecafe.concurrency.thread.basics;
 
 class MyThread1 extends Thread {
+
   public void run() {
     // Intentional infinite loop
     for (; ; ) {
@@ -14,12 +15,12 @@ class MyThread1 extends Thread {
       System.out.print("T");
     }
   }
+
 }
 
 public class StopAThreadInMiddle {
 
   public static void main(String[] args) {
-
     MyThread1 th = new MyThread1();
     th.start();
 

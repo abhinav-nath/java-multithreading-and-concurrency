@@ -14,7 +14,6 @@ class Sample1 {
   }
 
   public void increment() {
-
     synchronized (Sample1.class) {
       int c = a;
       c++;
@@ -30,9 +29,11 @@ class Sample1 {
       b++;
     }
   }
+
 }
 
 class IncTask implements Runnable {
+
   Sample1 obj;
 
   public IncTask(Sample1 obj) {
@@ -49,7 +50,6 @@ class IncTask implements Runnable {
 public class SynchronizationProblemWithStatic {
 
   public static void main(String[] args) {
-
     Sample1 obj1 = new Sample1();
     Sample1 obj2 = new Sample1();
 

@@ -3,7 +3,6 @@ package com.codecafe.concurrency.locks;
 public class ReEntrantLockDemo {
 
   public static void main(String[] args) {
-
     Sample obj = new Sample();
     obj.setX(10);
 

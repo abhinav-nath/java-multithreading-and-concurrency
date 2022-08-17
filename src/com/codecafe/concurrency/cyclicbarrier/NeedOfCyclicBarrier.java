@@ -3,7 +3,6 @@ package com.codecafe.concurrency.cyclicbarrier;
 public class NeedOfCyclicBarrier {
 
   public static void main(String[] args) {
-
     // We want TaskA to be started along with TaskB
     // but it will not happen here
     // TaskA will start and then main processing will happen

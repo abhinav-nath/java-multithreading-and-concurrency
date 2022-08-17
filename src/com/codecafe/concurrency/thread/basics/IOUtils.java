@@ -9,7 +9,6 @@ import java.io.OutputStream;
 public class IOUtils {
 
   public static void copy(InputStream src, OutputStream dest) throws IOException {
-
     int value;
     // reads one byte at a time and write it to the dest
     while ((value = src.read()) != -1) {
@@ -18,7 +17,6 @@ public class IOUtils {
   }
 
   public static void copyFile(String sourceFile, String destFile) throws IOException {
-
     FileInputStream fin = new FileInputStream(sourceFile);
     FileOutputStream fout = new FileOutputStream(destFile);
 
@@ -29,4 +27,5 @@ public class IOUtils {
     fin.close();
     fout.close();
   }
+
 }

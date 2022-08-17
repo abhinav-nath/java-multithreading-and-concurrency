@@ -5,7 +5,6 @@ import java.util.concurrent.CyclicBarrier;
 public class CyclicBarrierDemo {
 
   public static void main(String[] args) {
-
     // create a CycliBarrier with 2 participating threads
     // CyclicBarrier will trip only when both 2 threads
     // invoke the await() method

@@ -7,7 +7,6 @@ import java.util.concurrent.TimeUnit;
 public class DequeueMethods {
 
   public static void main(String[] args) {
-
     BlockingQueue<String> blockingQueue = new ArrayBlockingQueue<>(3);
 
     // take() blocks until an element becomes available
@@ -31,7 +30,6 @@ public class DequeueMethods {
 
     // removes the element if present in the BlockingQueue
     boolean wasRemoved = blockingQueue.remove("1");
-
   }
 
 }

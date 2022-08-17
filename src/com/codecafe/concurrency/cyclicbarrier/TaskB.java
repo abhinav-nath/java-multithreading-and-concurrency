@@ -5,7 +5,7 @@ import java.util.concurrent.CyclicBarrier;
 
 public class TaskB implements Runnable {
 
-  private CyclicBarrier barrier;
+  private final CyclicBarrier barrier;
 
   public TaskB(CyclicBarrier barrier) {
     this.barrier = barrier;

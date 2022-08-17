@@ -7,7 +7,6 @@ import java.util.concurrent.TimeUnit;
 public class EnqueueMethods {
 
   public static void main(String[] args) {
-
     BlockingQueue<String> blockingQueue = new ArrayBlockingQueue<>(3);
 
     // put() will block until there is no space
@@ -36,7 +35,6 @@ public class EnqueueMethods {
     } catch (InterruptedException e) {
       // no space inside BlockingQueue
     }
-
   }
 
 }

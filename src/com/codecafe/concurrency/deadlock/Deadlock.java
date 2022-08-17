@@ -2,8 +2,8 @@ package com.codecafe.concurrency.deadlock;
 
 class Writer1 extends Thread {
 
-  Object book;
-  Object pen;
+  final Object book;
+  final Object pen;
 
   public Writer1(Object book, Object pen) {
     this.book = book;
@@ -23,12 +23,13 @@ class Writer1 extends Thread {
       }
     }
   }
+
 }
 
 class Writer2 extends Thread {
 
-  Object book;
-  Object pen;
+  final Object book;
+  final Object pen;
 
   public Writer2(Object book, Object pen) {
     this.book = book;
@@ -51,12 +52,12 @@ class Writer2 extends Thread {
       }
     }
   }
+
 }
 
 public class Deadlock {
 
   public static void main(String[] args) {
-
     // dummy objects for book and pen
     Object book = new Object();
     Object pen = new Object();

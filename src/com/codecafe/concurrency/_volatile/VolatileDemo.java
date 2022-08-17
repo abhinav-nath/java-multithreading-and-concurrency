@@ -6,11 +6,9 @@ class Task implements Runnable {
 
   @Override
   public void run() {
-
     while (isRunning) {
       System.out.println(Thread.currentThread().getName() + " running");
     }
-
   }
 
   public void shutdown() {
@@ -23,7 +21,6 @@ class Task implements Runnable {
 public class VolatileDemo {
 
   public static void main(String[] args) throws InterruptedException {
-
     Task task = new Task();
 
     new Thread(task, "T1").start();
@@ -36,7 +33,6 @@ public class VolatileDemo {
     }
 
     task.shutdown();
-
   }
 
 }

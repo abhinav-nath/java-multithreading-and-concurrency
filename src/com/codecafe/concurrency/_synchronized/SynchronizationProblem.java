@@ -1,6 +1,7 @@
 package com.codecafe.concurrency._synchronized;
 
 class Sample {
+
   private int x;
 
   public int getX() {
@@ -25,6 +26,7 @@ class Sample {
 
     setX(y);
   }
+
 }
 
 class IncrementTask implements Runnable {
@@ -45,7 +47,6 @@ class IncrementTask implements Runnable {
 public class SynchronizationProblem {
 
   public static void main(String[] args) {
-
     Sample obj = new Sample();
     obj.setX(10);
 

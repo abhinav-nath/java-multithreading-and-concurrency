@@ -10,12 +10,12 @@ class MyTask implements Runnable {
       e.printStackTrace();
     }
   }
+
 }
 
 public class ThreadGroups {
 
   public static void main(String[] args) {
-
     ThreadGroup myThreadGroup = new ThreadGroup("MyThreadGroup");
     myThreadGroup.setMaxPriority(7);
 

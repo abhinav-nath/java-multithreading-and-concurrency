@@ -7,6 +7,7 @@ class MyThread extends Thread {
     for (int i = 0; i < 1000; i++)
       System.out.print("T");
   }
+
 }
 
 class MyTask implements Runnable {
@@ -16,12 +17,12 @@ class MyTask implements Runnable {
     for (int i = 0; i < 1000; i++)
       System.out.print("-");
   }
+
 }
 
 public class ThreadDemo {
 
   public static void main(String[] args) {
-
     MyThread th1 = new MyThread();
     th1.start(); // submit the thread for execution
 
@@ -34,6 +35,6 @@ public class ThreadDemo {
 
     for (int i = 0; i < 1000; i++)
       System.out.print("M");
-
   }
+
 }

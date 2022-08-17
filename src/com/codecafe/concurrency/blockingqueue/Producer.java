@@ -12,7 +12,6 @@ public class Producer implements Runnable {
 
   @Override
   public void run() {
-
     try {
       queue.put("1");
       Thread.sleep(1000);

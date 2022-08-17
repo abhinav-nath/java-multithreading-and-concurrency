@@ -4,8 +4,8 @@ import java.io.IOException;
 
 public class CopyTask implements Runnable {
 
-  String sourceFile;
-  String destFile;
+  private final String sourceFile;
+  private final String destFile;
 
   public CopyTask(String sourceFile, String destFile) {
     this.sourceFile = sourceFile;
@@ -20,4 +20,5 @@ public class CopyTask implements Runnable {
       e.printStackTrace();
     }
   }
+
 }

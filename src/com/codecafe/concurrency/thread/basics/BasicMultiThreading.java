@@ -5,7 +5,6 @@ import java.io.IOException;
 public class BasicMultiThreading {
 
   public static void main(String[] args) throws IOException {
-
     String sourceFile1 = "a.txt";
     String destFile1 = "b.txt";
 
@@ -22,7 +21,6 @@ public class BasicMultiThreading {
 
     Thread t2 = new Thread(new CopyTask(sourceFile2, destFile2));
     t2.start();
-
   }
 
 }

@@ -8,17 +8,14 @@ class TicketReservationSystem {
 
   Map<String, Integer> reservationInfo = new HashMap<>();
 
-
   public TicketReservationSystem() {
     init();
   }
-
 
   private void init() {
     reservationInfo.put("train1", 100);
     reservationInfo.put("train2", 100);
   }
-
 
   // reserves the tickets for the given train
   // if there are sufficient tickets available
@@ -47,20 +44,18 @@ class TicketReservationSystem {
     reservationInfo.put(trainName, available);
   }
 
-
   public Integer getAvailableTickets(String trainName) {
     return reservationInfo.get(trainName);
   }
 
 }
 
-
 // A Runnable task that enables parallel ticket booking
 class TicketBookingTask implements Runnable {
 
-  private TicketReservationSystem reservationSystem;
-  private String trainName;
-  private int ticketCount;
+  private final TicketReservationSystem reservationSystem;
+  private final String trainName;
+  private final int ticketCount;
 
   public TicketBookingTask(TicketReservationSystem reservationSystem, String trainName, int ticketCount) {
     this.reservationSystem = reservationSystem;
@@ -75,11 +70,9 @@ class TicketBookingTask implements Runnable {
 
 }
 
-
 public class TicketBookingExample {
 
   public static void main(String[] args) {
-
     TicketReservationSystem reservationSystem = new TicketReservationSystem();
 
     String trainName = "train1";
@@ -103,8 +96,7 @@ public class TicketBookingExample {
     }
 
     // Expected result is 0, without synchronized the result could be 50 which is wrong
-    System.out.println("Avalaible tickets for train <" + trainName + "> are <" + reservationSystem.getAvailableTickets(trainName) + ">");
-
+    System.out.println("Available tickets for train <" + trainName + "> are <" + reservationSystem.getAvailableTickets(trainName) + ">");
   }
 
 }

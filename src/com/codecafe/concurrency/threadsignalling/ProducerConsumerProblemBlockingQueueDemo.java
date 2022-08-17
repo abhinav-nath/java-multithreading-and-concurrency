@@ -61,7 +61,6 @@ class _Consumer implements Runnable {
 public class ProducerConsumerProblemBlockingQueueDemo {
 
   public static void main(String[] args) {
-
     // buffer limit is set to 3
     BlockingQueue<String> queue = new ArrayBlockingQueue<>(3);
 
@@ -70,7 +69,6 @@ public class ProducerConsumerProblemBlockingQueueDemo {
 
     producerThread.start();
     consumerThread.start();
-
   }
 
 }

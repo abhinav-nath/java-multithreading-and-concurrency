@@ -14,7 +14,6 @@ import java.util.concurrent.BlockingQueue;
 public class PeekMethods {
 
   public static void main(String[] args) {
-
     BlockingQueue<String> blockingQueue = new ArrayBlockingQueue<>(3);
 
     String element1 = blockingQueue.peek();

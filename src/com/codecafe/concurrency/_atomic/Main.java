@@ -8,8 +8,8 @@ import java.util.stream.IntStream;
 
 class Task implements Runnable {
 
-  private Semaphore semaphore;
-  private AtomicIntegerRoundRobin atomicIntegerRoundRobin;
+  private final Semaphore semaphore;
+  private final AtomicIntegerRoundRobin atomicIntegerRoundRobin;
 
   public Task(Semaphore semaphore, AtomicIntegerRoundRobin atomicIntegerRoundRobin) {
     this.semaphore = semaphore;
@@ -33,7 +33,6 @@ class Task implements Runnable {
 public class Main {
 
   public static void main(String[] args) throws InterruptedException {
-
     AtomicIntegerRoundRobin atomicIntegerRoundRobin = new AtomicIntegerRoundRobin(5);
 
     // create a batch of 3 threads at a time
@@ -45,7 +44,6 @@ public class Main {
 
     executor.shutdown();
     executor.awaitTermination(1, TimeUnit.MINUTES);
-
   }
 
 }

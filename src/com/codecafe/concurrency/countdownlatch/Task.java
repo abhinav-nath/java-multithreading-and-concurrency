@@ -4,8 +4,8 @@ import java.util.concurrent.CountDownLatch;
 
 public class Task implements Runnable {
 
-  private int delay;
-  private CountDownLatch latch;
+  private final int delay;
+  private final CountDownLatch latch;
 
   public Task(int delay, CountDownLatch latch) {
     this.delay = delay;
@@ -14,7 +14,6 @@ public class Task implements Runnable {
 
   @Override
   public void run() {
-
     try {
       Thread.sleep(delay);
     } catch (InterruptedException e) {

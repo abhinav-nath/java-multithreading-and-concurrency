@@ -6,7 +6,6 @@ import java.util.concurrent.BlockingQueue;
 public class BlockingQueueDemo {
 
   public static void main(String[] args) throws InterruptedException {
-
     BlockingQueue<String> queue = new ArrayBlockingQueue<>(1024);
 
     Producer producer = new Producer(queue);

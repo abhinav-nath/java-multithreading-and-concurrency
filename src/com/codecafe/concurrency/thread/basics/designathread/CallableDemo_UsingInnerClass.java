@@ -9,7 +9,6 @@ import java.util.concurrent.Future;
 public class CallableDemo_UsingInnerClass {
 
   public static void main(String[] args) throws InterruptedException, ExecutionException {
-
     int x = 10;
     int y = 20;
 

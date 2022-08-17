@@ -4,7 +4,7 @@ import java.util.concurrent.Semaphore;
 
 public class Task implements Runnable {
 
-  private Semaphore semaphore;
+  private final Semaphore semaphore;
 
   public Task(Semaphore semaphore) {
     this.semaphore = semaphore;

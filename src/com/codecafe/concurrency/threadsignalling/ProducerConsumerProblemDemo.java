@@ -9,7 +9,6 @@ package com.codecafe.concurrency.threadsignalling;
 public class ProducerConsumerProblemDemo {
 
   public static void main(String[] args) {
-
     // buffer limit is set to 1
     MessageQueue queue = new MessageQueue(1);
 
@@ -18,7 +17,6 @@ public class ProducerConsumerProblemDemo {
 
     producerThread.start();
     consumerThread.start();
-
   }
 
 }

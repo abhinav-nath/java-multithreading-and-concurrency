@@ -3,7 +3,6 @@ package com.codecafe.concurrency.thread.daemonthread;
 public class DaemonThread {
 
   public static void main(String[] args) {
-
     // Daemon thread
     Thread th = new Thread(() -> {
       for (int i = 1; ; i++)

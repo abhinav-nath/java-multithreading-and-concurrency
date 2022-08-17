@@ -55,4 +55,5 @@ class MessageQueue {
 
     return message;
   }
+
 }

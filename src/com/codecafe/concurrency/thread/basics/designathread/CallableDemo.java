@@ -33,7 +33,6 @@ class MyAddTask implements Callable<Integer> {
 public class CallableDemo {
 
   public static void main(String[] args) throws InterruptedException, ExecutionException {
-
     int x = 10;
     int y = 20;
 

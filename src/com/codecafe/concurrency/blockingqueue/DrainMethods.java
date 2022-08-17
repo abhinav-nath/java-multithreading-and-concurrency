@@ -11,7 +11,6 @@ import java.util.concurrent.BlockingQueue;
 public class DrainMethods {
 
   public static void main(String[] args) {
-
     BlockingQueue<String> blockingQueue = new ArrayBlockingQueue<>(10);
 
     Collection destination = new ArrayList();
@@ -19,7 +18,6 @@ public class DrainMethods {
     blockingQueue.drainTo(destination);
 
     blockingQueue.drainTo(destination, 5);
-
   }
 
 }

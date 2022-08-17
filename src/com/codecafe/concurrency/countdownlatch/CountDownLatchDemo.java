@@ -5,7 +5,6 @@ import java.util.concurrent.CountDownLatch;
 public class CountDownLatchDemo {
 
   public static void main(String[] args) throws InterruptedException {
-
     // Let us create task that is going to
     // wait for four threads before it starts
     CountDownLatch latch = new CountDownLatch(4);

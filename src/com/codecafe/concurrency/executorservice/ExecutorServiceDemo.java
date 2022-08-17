@@ -8,7 +8,6 @@ import com.codecafe.concurrency.thread.basics.CopyTask;
 public class ExecutorServiceDemo {
 
   public static void main(String[] args) {
-
     String sourceFile1 = "a.txt";
     String destFile1 = "b.txt";
 

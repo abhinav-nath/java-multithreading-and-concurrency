@@ -12,7 +12,6 @@ public class Consumer implements Runnable {
 
   @Override
   public void run() {
-
     try {
       System.out.println(queue.take());
       System.out.println(queue.take());
