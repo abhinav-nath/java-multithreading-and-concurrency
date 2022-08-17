@@ -6,11 +6,11 @@
 
 ### Working of CountDownLatch:
 
-When we create an object of `CountDownLatch`, we specify the number of threads it should wait for, all such thread are required to do count down by calling `CountDownLatch.countDown()` once they are completed or ready to the job.
+When we create an object of `CountDownLatch`, we specify the number of threads it should wait for, all such thread are required to do count down by calling the `CountDownLatch.countDown()` method once they are completed.
 As soon as count reaches zero, the waiting task starts running.
 
-If we were doing some parallel processing, we could instantiate the CountDownLatch with the same value for the counter as a number of threads we want to work across.
-Then, we could just call `countDown()` after each thread finishes, guaranteeing that a dependent thread calling `await()` will block until the worker threads are finished.
+If we were doing some parallel processing, we could instantiate the `CountDownLatch` with the same value for the counter as a number of threads we want to work across.
+Then, we could just call `countDown()` method after each thread finishes, guaranteeing that a dependent thread calling `await()` will block until the worker threads are finished.
 
 
 - Creating an object of `CountDownLatch` by passing an `int` to its constructor (the `count`), is actually number of invited parties (threads) for an event.
@@ -25,5 +25,5 @@ Then, we could just call `countDown()` after each thread finishes, guaranteeing 
 ### CountDownLatch Use cases:
 
 - **Achieving Maximum Parallelism**: Sometimes we want to start a number of threads at the same time to achieve maximum parallelism
-- Wait N threads to complete before starting execution
+- Wait `N` threads to complete before starting execution
 - Deadlock detection
