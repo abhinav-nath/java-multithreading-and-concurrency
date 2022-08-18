@@ -26,7 +26,7 @@ This is why we don't want to create so many threads.
 We can create a pool of threads instead.
 
 
-### Different ways of creating Executor Services:
+### Different ways of creating `ExecutorService`s:
 
 - Creates an Executor that uses a single worker thread operating off an unbounded queue:
 
