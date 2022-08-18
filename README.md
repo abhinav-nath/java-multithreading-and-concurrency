@@ -13,7 +13,7 @@ All about Multi-threading and Concurrent programming in Java. Simple and easy to
 - [Deadlock](./src/com/codecafe/concurrency/deadlock)
 
 #### Concurrent APIs provided by Java
-- [ExecutorService](./src/com/codecafe/concurrency/executorservice)
+- [ExecutorService](./src/com/codecafe/concurrency/executorservice/executorservice.md)
 - [BlockingQueue](./src/com/codecafe/concurrency/blockingqueue)
 - [Semaphore](./src/com/codecafe/concurrency/semaphore)
 - [CountdownLatch](./src/com/codecafe/concurrency/countdownlatch)
