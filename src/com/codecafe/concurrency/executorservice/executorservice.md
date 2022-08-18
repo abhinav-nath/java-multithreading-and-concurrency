@@ -52,13 +52,13 @@ We can create a pool of threads instead.
 We can submit a task for execution using the `execute()` method:
 
 ```java
-    executor.execute( runnableTaskInstance );
+executor.execute( runnableTaskInstance );
 ```
 
 e.g.
 
 ```java
-    executor.execute(new CopyTask(sourceFile1, destFile1));
+executor.execute(new CopyTask(sourceFile1, destFile1));
 ```
 
 If a thread is available in the pool then it assigns this task to the thread otherwise the task is added to the blocking queue
@@ -70,12 +70,12 @@ and is kept till a thread is available.
 - We can use a `Future` to check the return value:
 
   ```java
-   Future future = executorService.submit(new Runnable() {
-       public void run() {
-           System.out.println("hello");
-       }
-   });
-   future.get(); // returns null if task has finished correctly.
+  Future future = executorService.submit(new Runnable() {
+      public void run() {
+          System.out.println("hello");
+      }
+  });
+  future.get(); // returns null if task has finished correctly.
   ```
 
 #### But how to get the return value from the task?
@@ -83,10 +83,10 @@ and is kept till a thread is available.
 - By using the `Callable` interface:
 
   ```java
-   Future future = executorService.submit(new Callable() {
-       public void call() throws Exception {
-           Return "RESULT";
-       }
-   });
-   System.out.println("value from the async task : " + future.get());
-   ```
+  Future future = executorService.submit(new Callable() {
+      public void call() throws Exception {
+          Return "RESULT";
+      }
+  });
+  System.out.println("value from the async task : " + future.get());
+  ```
