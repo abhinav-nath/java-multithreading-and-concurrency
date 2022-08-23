@@ -21,4 +21,4 @@ All about Multi-threading and Concurrent programming in Java. Simple and easy to
 - [CountdownLatch](./src/com/codecafe/concurrency/countdownlatch/countdownlatch.md)
 - [CyclicBarrier](./src/com/codecafe/concurrency/cyclicbarrier/cyclicbarrier.md)
 - [`atomic` variables](./src/com/codecafe/concurrency/_atomic)
-- [The `volatile` keyword](./src/com/codecafe/concurrency/_volatile)
+- [The `volatile` keyword](./src/com/codecafe/concurrency/_volatile/volatile-keyword.md)
