@@ -3,6 +3,7 @@
 All about Multi-threading and Concurrent programming in Java. Simple and easy to understand code examples for most of the Concurrent APIs provided by Java.
 
 #### All about Threads
+- [Motivation - Why do we need Threads?](./notes/threads-motivation.md)
 - [Threads in Java](./src/com/codecafe/concurrency/thread)
   - [Creating Threads](./src/com/codecafe/concurrency/thread/basics/designathread/creating-threads.md)
   - [Thread States](./src/com/codecafe/concurrency/thread/basics/designathread/thread-states.md)
