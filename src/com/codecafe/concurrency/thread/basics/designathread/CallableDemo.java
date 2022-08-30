@@ -1,10 +1,6 @@
 package com.codecafe.concurrency.thread.basics.designathread;
 
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+import java.util.concurrent.*;
 
 class MyMath {
   public static int add(int a, int b) {
@@ -28,6 +24,7 @@ class MyAddTask implements Callable<Integer> {
     int result = x + y;
     return result;
   }
+
 }
 
 public class CallableDemo {

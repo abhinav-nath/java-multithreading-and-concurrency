@@ -1,14 +1,20 @@
 # Multithreading and Concurrency in Java
 
-All about Multi-threading and Concurrent programming in Java. Simple and easy to understand code examples for most of the Concurrent APIs provided by Java.
+All about Multi-threading and Concurrent programming in Java.
+Simple and easy to understand code examples for most of the Concurrent APIs provided by Java.
 
 #### All about Threads
 - [Motivation - Why do we need Threads?](./notes/threads-motivation.md)
 - [Threads in Java](./src/com/codecafe/concurrency/thread)
-  - [Creating Threads](./src/com/codecafe/concurrency/thread/basics/designathread/creating-threads.md)
-  - [Thread States](./src/com/codecafe/concurrency/thread/basics/designathread/thread-states.md)
+  - [Creating Threads](./notes/creating-threads.md) using
+    - [Runnable](./src/com/codecafe/concurrency/thread/basics/designathread/ThreadDemo.java)
+    - [Thread class](./src/com/codecafe/concurrency/thread/basics/designathread/ThreadDemo.java)
+    - [Callable](./src/com/codecafe/concurrency/thread/basics/designathread/CallableDemo.java)
+    - [ExecutorService](notes/executorservice.md) - [[code](./src/com/codecafe/concurrency/executorservice/ExecutorServiceDemo.java)]
+  - [Thread States](./notes/thread-states.md) - [[code](./src/com/codecafe/concurrency/thread/basics/designathread/ThreadStates.java)]
+  - [Stop a Thread](./src/com/codecafe/concurrency/thread/basics/StopAThreadInMiddle.java)
 - [Thread Signalling](./src/com/codecafe/concurrency/threadsignalling)
-- [Daemon Thread](./src/com/codecafe/concurrency/thread/daemonthread/daemon-thread.md)
+- [Daemon Thread](./notes/daemon-thread.md) - [[code](./src/com/codecafe/concurrency/thread/daemonthread)]
 
 #### Thread synchronization and locks
 - [The `synchronized` keyword](./src/com/codecafe/concurrency/_synchronized)
@@ -16,10 +22,11 @@ All about Multi-threading and Concurrent programming in Java. Simple and easy to
 - [Deadlock](./src/com/codecafe/concurrency/deadlock)
 
 #### Concurrent APIs provided by Java
-- [ExecutorService](./src/com/codecafe/concurrency/executorservice/executorservice.md)
 - [BlockingQueue](./src/com/codecafe/concurrency/blockingqueue)
-- [Semaphore](./src/com/codecafe/concurrency/semaphore/semaphore.md)
-- [CountdownLatch](./src/com/codecafe/concurrency/countdownlatch/countdownlatch.md)
-- [CyclicBarrier](./src/com/codecafe/concurrency/cyclicbarrier/cyclicbarrier.md)
+- [Semaphore](./notes/semaphore.md) - [[code](./src/com/codecafe/concurrency/semaphore)]
+- [CountdownLatch](./notes/countdownlatch.md) - [[code](./src/com/codecafe/concurrency/countdownlatch/CountDownLatchDemo.java)]
+  - [with time-out](./src/com/codecafe/concurrency/countdownlatch/timeout/TerminatingCountDownLatch.java)
+- [CyclicBarrier](./notes/cyclicbarrier.md) - [[code](./src/com/codecafe/concurrency/cyclicbarrier/CyclicBarrierDemo.java)]
+  - [Need of CyclicBarrier](./src/com/codecafe/concurrency/cyclicbarrier/NeedOfCyclicBarrier.java)
 - [`atomic` variables](./src/com/codecafe/concurrency/_atomic)
-- [The `volatile` keyword](./src/com/codecafe/concurrency/_volatile/volatile-keyword.md)
+- [The `volatile` keyword](./src/com/codecafe/concurrency/_volatile/volatile-keyword.md) - [[code](./src/com/codecafe/concurrency/_volatile/VolatileDemo.java)]

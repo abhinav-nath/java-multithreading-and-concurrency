@@ -1,9 +1,11 @@
 ## Motivation - Why do we need Threads?
 
-1. **[Responsiveness](#responsiveness---concurrency)**
-2. **[Performance](#performance---parallelism)**
+For two primary things:
 
-## Responsiveness - Concurrency
+1. **[Responsiveness](#responsiveness---achieved-by-concurrency)**
+2. **[Performance](#performance---achieved-by-parallelism)**
+
+## Responsiveness - achieved by Concurrency
 
 ### Examples of Poor Responsiveness
 
@@ -22,7 +24,7 @@ The term we use for this kind of multi-tasking is **concurrency**.
 
 We don't need multiple cores to achieve concurrency. Even with one core, we can create responsive applications by using multiple threads.
 
-## Performance - Parallelism
+## Performance - achieved by Parallelism
 
 - We can create an *illusion* of multiple tasks executing in parallel using just a single core.
 - With **multiple cores**, we can truly run tasks completely in parallel.

@@ -7,7 +7,7 @@ class MyThread1 extends Thread {
     for (; ; ) {
       // Returns true if the thread is interrupted
       if (interrupted()) {
-        // You are supposed to rollback or reverse the operation in progress and stop
+        // You are supposed to roll back or reverse the operation in progress and stop
         System.out.println("Thread is interrupted hence stopping...");
         // Terminates the loop
         break;
