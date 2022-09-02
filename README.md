@@ -6,13 +6,14 @@ Simple and easy to understand code examples for most of the Concurrent APIs prov
 #### All about Threads
 - [Motivation - Why do we need Threads?](./notes/threads-motivation.md)
 - [Threads in Java](./src/com/codecafe/concurrency/thread)
-  - [Creating Threads](./notes/creating-threads.md) using
+  - [Creating Threads](./notes/creating-threads.md) using:
     - [Runnable](./src/com/codecafe/concurrency/thread/basics/designathread/ThreadDemo.java)
     - [Thread class](./src/com/codecafe/concurrency/thread/basics/designathread/ThreadDemo.java)
     - [Callable](./src/com/codecafe/concurrency/thread/basics/designathread/CallableDemo.java)
     - [ExecutorService](notes/executorservice.md) - [[code](./src/com/codecafe/concurrency/executorservice/ExecutorServiceDemo.java)]
   - [Thread States](./notes/thread-states.md) - [[code](./src/com/codecafe/concurrency/thread/basics/designathread/ThreadStates.java)]
   - [Thread Termination](./src/com/codecafe/concurrency/thread/basics/Main.java)
+  - [Joining Threads](./src/com/codecafe/concurrency/thread/joiningthreads/Main.java)
 - [Thread Signalling](./src/com/codecafe/concurrency/threadsignalling)
 - [Daemon Threads](./notes/daemon-threads.md) - [[code](./src/com/codecafe/concurrency/thread/daemonthreads/Main.java)]
 
