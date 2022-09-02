@@ -1,6 +1,7 @@
-## Daemon Thread
+## Daemon Threads
 
-> A **Daemon thread** is a low priority thread that runs in background to perform housekeeping tasks such as garbage collection.
+> **Daemon threads** are low priority threads that run in background to perform housekeeping tasks such as garbage collection.
+> They are background threads that do not prevent the application from exiting if the `main` thread terminates.
 
 #### Properties:
 

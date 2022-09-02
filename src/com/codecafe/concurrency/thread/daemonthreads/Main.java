@@ -1,11 +1,11 @@
-package com.codecafe.concurrency.thread.daemonthread;
+package com.codecafe.concurrency.thread.daemonthreads;
 
-public class DaemonThread {
+public class Main {
 
   public static void main(String[] args) {
     // Daemon thread
     Thread th = new Thread(() -> {
-      for (int i = 1; ; i++)
+      for (int i = 1; i <= 10000; i++)
         System.out.print(" D-" + i);
     });
 
