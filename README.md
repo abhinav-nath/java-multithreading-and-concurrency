@@ -14,7 +14,7 @@ Simple and easy to understand code examples for most of the Concurrent APIs prov
   - [Thread States](./notes/thread-states.md) - [[code](./src/com/codecafe/concurrency/thread/basics/designathread/ThreadStates.java)]
   - [Thread Termination](./src/com/codecafe/concurrency/thread/basics/Main.java)
 - [Thread Signalling](./src/com/codecafe/concurrency/threadsignalling)
-- [Daemon Threads](./notes/daemon-threads.md) - [[code](./src/com/codecafe/concurrency/thread/daemonthreads)]
+- [Daemon Threads](./notes/daemon-threads.md) - [[code](./src/com/codecafe/concurrency/thread/daemonthreads/Main.java)]
 
 #### Thread synchronization and locks
 - [The `synchronized` keyword](./src/com/codecafe/concurrency/_synchronized)
