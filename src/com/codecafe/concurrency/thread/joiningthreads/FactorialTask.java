@@ -22,7 +22,7 @@ public class FactorialTask implements Runnable {
     BigInteger tempResult = BigInteger.ONE;
 
     for (long i = n; i > 0; i--) {
-      tempResult = tempResult.multiply(new BigInteger(Long.toBinaryString(i)));
+      tempResult = tempResult.multiply(new BigInteger(Long.toString(i)));
     }
 
     return tempResult;
