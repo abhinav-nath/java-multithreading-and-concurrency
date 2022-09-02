@@ -1,4 +1,4 @@
-package com.codecafe.concurrency.thread.basics;
+package com.codecafe.concurrency.thread.threadtermination;
 
 class LongComputationTask implements Runnable {
 
