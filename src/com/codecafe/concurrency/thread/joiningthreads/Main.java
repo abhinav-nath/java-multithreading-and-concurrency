@@ -6,7 +6,7 @@ import java.util.List;
 public class Main {
 
   public static void main(String[] args) throws InterruptedException {
-    List<Long> numbers = List.of(0L, 5653L, 9090L, 30467L, 27L, 2276L);
+    List<Long> numbers = List.of(5L, 5653L, 9090909L, 30467L, 27L, 2276L);
 
     List<FactorialTask> factorialTasks = new ArrayList<>();
     List<Thread> factorialThreads = new ArrayList<>();
