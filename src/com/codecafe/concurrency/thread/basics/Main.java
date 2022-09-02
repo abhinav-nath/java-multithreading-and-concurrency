@@ -1,14 +1,15 @@
 package com.codecafe.concurrency.thread.basics;
 
-class MyThread1 extends Thread {
+class LongComputationTask implements Runnable {
 
+  @Override
   public void run() {
-    // Intentional infinite loop
+    // Intentional infinite loop to simulate a long computation task
     for (; ; ) {
       // Returns true if the thread is interrupted
-      if (interrupted()) {
+      if (Thread.currentThread().isInterrupted()) {
         // You are supposed to roll back or reverse the operation in progress and stop
-        System.out.println("Thread is interrupted hence stopping...");
+        System.out.println("\nThread is interrupted hence stopping...");
         // Terminates the loop
         break;
       }
@@ -18,14 +19,14 @@ class MyThread1 extends Thread {
 
 }
 
-public class StopAThreadInMiddle {
+public class Main {
 
   public static void main(String[] args) {
-    MyThread1 th = new MyThread1();
+    Thread th = new Thread(new LongComputationTask());
     th.start();
 
     try {
-      Thread.sleep(10);
+      Thread.sleep(50);
     } catch (InterruptedException e) {
       e.printStackTrace();
     }

@@ -12,7 +12,7 @@ Simple and easy to understand code examples for most of the Concurrent APIs prov
     - [Callable](./src/com/codecafe/concurrency/thread/basics/designathread/CallableDemo.java)
     - [ExecutorService](notes/executorservice.md) - [[code](./src/com/codecafe/concurrency/executorservice/ExecutorServiceDemo.java)]
   - [Thread States](./notes/thread-states.md) - [[code](./src/com/codecafe/concurrency/thread/basics/designathread/ThreadStates.java)]
-  - [Stop a Thread](./src/com/codecafe/concurrency/thread/basics/StopAThreadInMiddle.java)
+  - [Thread Termination](./src/com/codecafe/concurrency/thread/basics/Main.java)
 - [Thread Signalling](./src/com/codecafe/concurrency/threadsignalling)
 - [Daemon Thread](./notes/daemon-thread.md) - [[code](./src/com/codecafe/concurrency/thread/daemonthread)]
 
