@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Main {
 
-  public static void main(String[] args) throws InterruptedException {
+  public static void main(String[] args) {
     List<Long> numbers = List.of(5L, 5653L, 9090909L, 30467L, 27L, 2276L);
 
     List<FactorialTask> factorialTasks = new ArrayList<>();
@@ -24,7 +24,12 @@ public class Main {
     }
 
     for (Thread th : factorialThreads) {
-      th.join(2000);
+      try {
+        th.join(50);
+      } catch (InterruptedException e) {
+        System.out.println("Could not join thread-" + th.getName());
+        th.interrupt();
+      }
     }
 
     for (int i = 0; i < numbers.size(); i++) {
@@ -33,7 +38,8 @@ public class Main {
       if (factorialTask.isFinished()) {
         System.out.println("Factorial of " + numbers.get(i) + " is " + factorialTask.getResult());
       } else {
-        System.out.println("The calculation for " + numbers.get(i) + " is still in progress");
+        System.out.println("The calculation for " + numbers.get(i) + " is still in progress by " + factorialThreads.get(i).getName());
+        factorialThreads.get(i).interrupt();
       }
     }
   }

@@ -22,6 +22,10 @@ public class FactorialTask implements Runnable {
     BigInteger tempResult = BigInteger.ONE;
 
     for (long i = n; i > 0; i--) {
+      if (Thread.currentThread().isInterrupted()) {
+        System.out.println(Thread.currentThread().getName() + " is interrupted hence stopping...");
+        break;
+      }
       tempResult = tempResult.multiply(new BigInteger(Long.toString(i)));
     }
 
