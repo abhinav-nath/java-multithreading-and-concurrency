@@ -18,8 +18,8 @@ Simple and easy to understand code examples for most of the Concurrent APIs prov
 - [Daemon Threads](./notes/daemon-threads.md) - [[code](./src/com/codecafe/concurrency/thread/daemonthreads/Main.java)]
 
 #### [Performance in Multithreading](./notes/performance-in-multithreading.md)
-- Latency
-- Throughput
+- [Latency](./notes/performance-in-multithreading.md#latency)
+- [Throughput](./notes/performance-in-multithreading.md#throughput)
 
 #### Thread synchronization and locks
 - [The `synchronized` keyword](./src/com/codecafe/concurrency/_synchronized)
