@@ -5,6 +5,7 @@ There are two main criteria for performance in multithreaded applications:
 1. **Latency** - The time to completion of a task. Measured in _time_ units.
 2. **Throughput** - The amount of tasks completed in a given period. Measured in _tasks/time_ unit.
 
+
 ## Latency
 
 Suppose we have a single task which can be completed by a single thread sequentially within time T
@@ -22,11 +23,13 @@ and theoretically we want to achieve the latency of `T/N` (`N` = number of sub-t
 
 Therefore, we want to do a theoretical reduction in latency by `N` = Performance improvement by a factor of `N`.
 
+
 ### Few important questions
 
 - `N = ?` | How many subtasks/threads to break the original task into?
 - Does breaking original task and aggregating results come for free?
 - Can we always break any task in multiple subtasks?
+
 
 #### N = ?
 
@@ -43,3 +46,21 @@ schedule every task in a different core utilizing its hardware the best it can a
 >
 > That additional thread will keep pushing the other threads from their cores back and forth resulting in
 > *context-switches*, *bad cache performance* and *extra memory consumption*.
+
+**Important points**
+
+- `# threads = # cores` is optimal only if all threads are runnable and can run without interruption (no IO / blocking calls / sleep etc.)
+- The assumption is that nothing else is running that consumes a lot of CPU.
+
+
+#### Hyper-threading
+
+Most computers today use **Hyper-threading**. It means a single physical core can run more than one thread at a time.
+
+Hyper-threading is a process by which a CPU divides up its **physical cores** into **virtual cores** that are treated as if they are actually physical cores by the OS.
+
+We cannot run all the threads 100% in parallel, but we can get close to that!
+
+**References:**
+- https://www.hp.com/us-en/shop/tech-takes/what-is-hyperthreading
+- https://www.intel.com/content/www/us/en/gaming/resources/hyper-threading.html
