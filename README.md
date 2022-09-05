@@ -17,7 +17,7 @@ Simple and easy to understand code examples for most of the Concurrent APIs prov
 - [Thread Signalling](./src/com/codecafe/concurrency/threadsignalling)
 - [Daemon Threads](./notes/daemon-threads.md) - [[code](./src/com/codecafe/concurrency/thread/daemonthreads/Main.java)]
 
-#### [Performance in Multithreading](./notes/performance-in-multithreading.md)
+#### Performance in Multithreading
 - [Latency](./notes/performance-in-multithreading.md#latency)
 - [Throughput](./notes/performance-in-multithreading.md#throughput)
 
