@@ -19,6 +19,9 @@ Simple and easy to understand code examples for most of the Concurrent APIs prov
 
 #### Performance in Multithreading
 - [Latency](./notes/performance-in-multithreading.md#latency)
+  - [How many subtasks/threads to break the original task into?](./notes/performance-in-multithreading.md#n--)
+    - [Hyper-threading](./notes/performance-in-multithreading.md#hyper-threading)
+  - [Inherent cost of Parallelization and Aggregation](./notes/performance-in-multithreading.md#inherent-cost-of-parallelization-and-aggregation)
 - [Throughput](./notes/performance-in-multithreading.md#throughput)
 
 #### Thread synchronization and locks
