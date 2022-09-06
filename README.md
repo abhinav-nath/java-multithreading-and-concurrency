@@ -22,6 +22,7 @@ Simple and easy to understand code examples for most of the Concurrent APIs prov
   - [How many subtasks/threads to break the original task into?](./notes/performance-in-multithreading.md#n--)
     - [Hyper-threading](./notes/performance-in-multithreading.md#hyper-threading)
   - [Inherent cost of Parallelization and Aggregation](./notes/performance-in-multithreading.md#inherent-cost-of-parallelization-and-aggregation)
+  - [Can we always break any task into multiple subtasks?](./notes/performance-in-multithreading.md#can-we-always-break-any-task-into-multiple-subtasks)
 - [Throughput](./notes/performance-in-multithreading.md#throughput)
 
 #### Thread synchronization and locks

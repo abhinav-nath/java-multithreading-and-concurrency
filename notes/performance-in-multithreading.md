@@ -71,3 +71,10 @@ We cannot run all the threads 100% in parallel, but we can get close to that!
 ### Inherent cost of Parallelization and Aggregation
 
 ![Inherent cost of Parallelization and Aggregation](../images/latency_5.png)
+
+
+### Can we always break any task into multiple subtasks?
+
+The answer is NO!
+
+- Small and trivial tasks are not worth breaking and running in parallel.
