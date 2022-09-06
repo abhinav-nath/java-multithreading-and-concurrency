@@ -6,7 +6,9 @@ There are two main criteria for performance in multithreaded applications:
 2. **Throughput** - The amount of tasks completed in a given period. Measured in _tasks/time_ unit.
 
 
-## Latency
+# Latency
+
+**How can we make a task multithreaded?**
 
 Suppose we have a single task which can be completed by a single thread sequentially within time T
 
@@ -24,16 +26,16 @@ and theoretically we want to achieve the latency of `T/N` (`N` = number of sub-t
 Therefore, we want to do a theoretical reduction in latency by `N` = Performance improvement by a factor of `N`.
 
 
-### Few important questions
+## Few important questions
 
 - `N = ?` | How many subtasks/threads to break the original task into?
 - Does breaking original task and aggregating results come for free?
 - Can we always break any task in multiple subtasks?
 
 
-#### N = ?
+### N = ?
 
-![Latency](../images/latency_4.png)
+![N = ?](../images/latency_4.png)
 
 On a general purpose computer : `N` should be as close as possible to the number of CPU cores (`N = number of cores`)
 
@@ -64,3 +66,8 @@ We cannot run all the threads 100% in parallel, but we can get close to that!
 **References:**
 - https://www.hp.com/us-en/shop/tech-takes/what-is-hyperthreading
 - https://www.intel.com/content/www/us/en/gaming/resources/hyper-threading.html
+
+
+### Inherent cost of Parallelization and Aggregation
+
+![Inherent cost of Parallelization and Aggregation](../images/latency_5.png)
