@@ -54,6 +54,7 @@ schedule every task in a different core utilizing its hardware the best it can a
 - `# threads = # cores` is optimal only if all threads are runnable and can run without interruption (no IO / blocking calls / sleep etc.)
 - The assumption is that nothing else is running that consumes a lot of CPU.
 
+> More threads than cores is **counter-productive**!
 
 #### Hyper-threading
 
@@ -77,4 +78,14 @@ We cannot run all the threads 100% in parallel, but we can get close to that!
 
 The answer is NO!
 
-- Small and trivial tasks are not worth breaking and running in parallel.
+- Small and trivial tasks are not worth breaking and running in parallel
+
+
+# Throughput
+
+## When does it matter?
+
+![When does it matter?](../images/throughput_1.png)
+
+When we have a program that is given a concurrent flow of tasks and want to perform as many tasks as possible, as fast as possible.
+In that case **throughput** will be the right performance metric to evaluate the performance of our program.
