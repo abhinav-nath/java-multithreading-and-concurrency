@@ -89,3 +89,12 @@ The answer is NO!
 
 When we have a program that is given a concurrent flow of tasks and want to perform as many tasks as possible, as fast as possible.
 In that case **throughput** will be the right performance metric to evaluate the performance of our program.
+
+
+## Thread Pooling
+
+- Implementing a thread pool is not trivial
+- JDK comes with a few implementations of thread pools
+  - Fixed Thread Pool Executor
+    - Using a Fixed Thread Pool, we maintain a constant number of threads, and eliminate the need to recreate the threads
+    - It results in significant performance improvement (`xN`)
