@@ -26,7 +26,13 @@ This is why we don't want to create so many threads.
 We can create a pool of threads instead.
 
 
-### Different ways of creating `ExecutorService`s:
+### Different ways of creating `ExecutorService` Instance:
+
+`ExecutorService` is an interface and its implementations can execute a `Runnable` or `Callable` class in an asynchronous way.
+
+#### Using Executors
+
+`Executors` is a utility class that provides factory methods for creating the implementations of the interface.
 
 - Creates an Executor that uses a single worker thread operating off an unbounded queue:
 
@@ -90,3 +96,13 @@ and is kept till a thread is available.
   });
   System.out.println("value from the async task : " + future.get());
   ```
+
+### How to shutdown `ExecutorService`?
+
+There are three methods to invoke shutdown:
+
+- `void shutdown()`: Initiates an orderly shutdown in which previously submitted tasks are executed, but no new tasks will be accepted.
+
+- `List<Runnable> shutdownNow()`: Attempts to stop all actively executing tasks, halts the processing of waiting tasks, and returns a list of the tasks that were awaiting execution.
+
+- `void awaitTermination()`:It blocks until all tasks have completed execution after a shutdown request, or the timeout occurs, or the current thread is interrupted, whichever happens first.
