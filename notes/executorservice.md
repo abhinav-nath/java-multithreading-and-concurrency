@@ -101,8 +101,8 @@ and is kept till a thread is available.
 
 There are three methods to invoke shutdown:
 
-- `void shutdown()`: Initiates an orderly shutdown in which previously submitted tasks are executed, but no new tasks will be accepted.
+- `void shutdown()` - Initiates an orderly shutdown in which previously submitted tasks are executed, but no new tasks will be accepted.
 
-- `List<Runnable> shutdownNow()`: Attempts to stop all actively executing tasks, halts the processing of waiting tasks, and returns a list of the tasks that were awaiting execution.
+- `List<Runnable> shutdownNow()` - Attempts to stop all actively executing tasks, halts the processing of waiting tasks, and returns a list of the tasks that were awaiting execution.
 
-- `void awaitTermination()`:It blocks until all tasks have completed execution after a shutdown request, or the timeout occurs, or the current thread is interrupted, whichever happens first.
+- `void awaitTermination()` - It blocks until all tasks have completed execution after a shutdown request, or the timeout occurs, or the current thread is interrupted, whichever happens first.
