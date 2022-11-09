@@ -2,7 +2,7 @@ package com.codecafe.concurrency._volatile;
 
 class Task implements Runnable {
 
-  volatile boolean isRunning = true;
+  private volatile boolean isRunning = true;
 
   @Override
   public void run() {
