@@ -9,10 +9,6 @@ class Sample1 {
     return b;
   }
 
-  public void setB(int b) {
-    this.b = b;
-  }
-
   public void increment() {
     synchronized (Sample1.class) {
       int c = a;
@@ -66,8 +62,8 @@ public class SynchronizationProblemWithStatic {
       e.printStackTrace();
     }
 
-    System.out.printf("a = %d\n", Sample1.a);
-    System.out.printf("obj1 - b = %d\nobj2 - b = %d", obj1.getB(), obj2.getB());
+    System.out.printf("a = %d%n", Sample1.a);
+    System.out.printf("obj1 - b = %d%nobj2 - b = %d", obj1.getB(), obj2.getB());
   }
 
 }

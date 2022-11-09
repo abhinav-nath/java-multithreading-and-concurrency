@@ -1,6 +1,6 @@
 package com.codecafe.concurrency._synchronized;
 
-class Sample {
+class SharedResource {
 
   private int x;
 
@@ -31,9 +31,9 @@ class Sample {
 
 class IncrementTask implements Runnable {
 
-  private Sample obj;
+  private final SharedResource obj;
 
-  public IncrementTask(Sample obj) {
+  public IncrementTask(SharedResource obj) {
     this.obj = obj;
   }
 
@@ -47,7 +47,7 @@ class IncrementTask implements Runnable {
 public class SynchronizationProblem {
 
   public static void main(String[] args) {
-    Sample obj = new Sample();
+    SharedResource obj = new SharedResource();
     obj.setX(10);
 
     Thread t1 = new Thread(new IncrementTask(obj));

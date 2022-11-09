@@ -1,10 +1,8 @@
 package com.codecafe.concurrency.thread.basics;
 
-import java.io.IOException;
-
 public class BasicMultiThreading {
 
-  public static void main(String[] args) throws IOException {
+  public static void main(String[] args) {
     String sourceFile1 = "a.txt";
     String destFile1 = "b.txt";
 

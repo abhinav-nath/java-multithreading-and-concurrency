@@ -1,10 +1,10 @@
 package com.codecafe.concurrency._synchronized._static;
 
 class CountTask implements Runnable {
-  public int PRINT_NUMBERS_UPTO = 10;
+  public static final int PRINT_NUMBERS_UPTO = 10;
   static int number = 1;
   int remainder;
-  static Object lock = new Object();
+  static final Object lock = new Object();
 
   CountTask(int remainder) {
     this.remainder = remainder;
