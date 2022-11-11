@@ -42,4 +42,4 @@ Simple and easy to understand code examples for most of the Concurrent APIs prov
 - [CyclicBarrier](./notes/cyclicbarrier.md) - [[code](./src/com/codecafe/concurrency/cyclicbarrier/CyclicBarrierDemo.java)]
   - [Need of CyclicBarrier](./src/com/codecafe/concurrency/cyclicbarrier/NeedOfCyclicBarrier.java)
 - [`atomic` variables](./src/com/codecafe/concurrency/_atomic)
-- [The `volatile` keyword](./src/com/codecafe/concurrency/_volatile/volatile-keyword.md) - [[code](./src/com/codecafe/concurrency/_volatile/VolatileDemo.java)]
+- [The `volatile` keyword](./notes/volatile-keyword.md) - [[code](./src/com/codecafe/concurrency/_volatile/VolatileDemo.java)]
