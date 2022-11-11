@@ -19,7 +19,7 @@ That means, that each thread may copy the variables into the CPU cache of differ
 
 With non-volatile variables there are no guarantees about when the Java Virtual Machine (JVM) reads data from main memory into CPU caches, or writes data from CPU caches to main memory.
 
-Imagine a situation in which two or more threads have access to a shared object which contains a counter variable declared like this:
+Imagine a situation in which two or more threads have access to a shared object which contains a `counter` variable declared like this:
 
 ```java
 public class SharedObject {
@@ -60,4 +60,4 @@ Declaring a variable `volatile` thus _guarantees the visibility_ for other threa
 
 In the scenario given above, where one thread (T1) modifies the `counter`, and another thread (T2) reads the `counter` (but never modifies it), declaring the `counter` variable `volatile` is enough to guarantee visibility for T2 of writes to the `counter` variable.
 
-If, however, both T1 and T2 were incrementing the counter variable, then declaring the `counter` variable `volatile` would not have been enough.
+If, however, both T1 and T2 were incrementing the `counter` variable, then declaring the `counter` variable `volatile` would not have been enough.
