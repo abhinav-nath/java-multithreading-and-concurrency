@@ -24,7 +24,7 @@ Imagine a situation in which two or more threads have access to a shared object 
 ```java
 public class SharedObject {
 
-    public int counter = 0;
+  public int counter = 0;
 
 }
 ```
@@ -51,7 +51,7 @@ Here is how the `volatile` declaration of the `counter` variable looks:
 ```java
 public class SharedObject {
 
-    public volatile int counter = 0;
+  public volatile int counter = 0;
 
 }
 ```
