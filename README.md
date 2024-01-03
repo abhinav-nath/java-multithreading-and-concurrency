@@ -3,8 +3,6 @@
 All about Multi-threading and Concurrent programming in Java.
 Simple and easy to understand code examples for most of the Concurrent APIs provided by Java.
 
-⭐ Star this repository — it helps!
-
 ### Topics
 
 #### All about Threads
@@ -43,3 +41,8 @@ Simple and easy to understand code examples for most of the Concurrent APIs prov
   - [Need of CyclicBarrier](./src/com/codecafe/concurrency/cyclicbarrier/NeedOfCyclicBarrier.java)
 - [`atomic` variables](./src/com/codecafe/concurrency/_atomic)
 - [The `volatile` keyword](./notes/volatile-keyword.md) - [[code](./src/com/codecafe/concurrency/_volatile/VolatileDemo.java)]
+
+---
+<p align="center">
+  ⭐ Star this repository — it helps!
+</p>
