@@ -44,5 +44,5 @@ Simple and easy to understand code examples for most of the Concurrent APIs prov
 
 ---
 <p align="center">
-  ⭐ Star this repository — it helps!
+  ⭐ Star this repository if it helped you!
 </p>
